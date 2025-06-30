@@ -16,9 +16,6 @@ resource "descope_project" "my_project" {
     },
     "sign-up" = {
       data = file("${path.module}/flows/sign-up.json")
-    },
-    "idp-initiated-sso" = {
-      data = file("${path.module}/flows/idp-initiated-sso.json")
     }
   }
 
