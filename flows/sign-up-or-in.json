@@ -46,14 +46,136 @@
         }
       },
       "16": {
-        "contextKeys": [
-          "inputs.phone"
+        "allInputKeys": [
+          "fullName"
         ],
+        "calculatedInputKeys": true,
+        "clientScripts": [],
+        "componentsConnectors": {},
+        "dynamicSelects": {},
+        "htmlTemplate": {
+          "7mIfMql_Ht": {
+            "custom": {},
+            "displayName": "Text",
+            "hidden": false,
+            "isCanvas": false,
+            "linkedNodes": {},
+            "nodes": [],
+            "parent": "ROOT",
+            "props": {
+              "children": "To complete your sign up, please provide the following information",
+              "full-width": false,
+              "id": "7mIfMql_Ht",
+              "isEnriched": true,
+              "italic": false,
+              "link-target-blank": true,
+              "mode": "primary",
+              "text-align": "center",
+              "variant": "subtitle2"
+            },
+            "type": {
+              "resolvedName": "Text"
+            }
+          },
+          "NQ8ig4chcI": {
+            "custom": {
+              "contextKey": "displayName",
+              "type": "input"
+            },
+            "displayName": "Full Name Input",
+            "hidden": false,
+            "isCanvas": false,
+            "linkedNodes": {},
+            "nodes": [],
+            "parent": "ROOT",
+            "props": {
+              "bordered": true,
+              "copy-to-clipboard": false,
+              "data-errormessage-value-missing": "Please fill out this field.",
+              "full-width": true,
+              "id": "NQ8ig4chcI",
+              "label": "",
+              "label-type": "static",
+              "max": 100,
+              "name": "fullName",
+              "placeholder": "Full Name",
+              "required": false,
+              "size": "md",
+              "type": "text"
+            },
+            "type": {
+              "resolvedName": "FullNameInput"
+            }
+          },
+          "ROOT": {
+            "custom": {},
+            "displayName": "Container",
+            "hidden": false,
+            "isCanvas": true,
+            "linkedNodes": {},
+            "nodes": [
+              "7mIfMql_Ht",
+              "NQ8ig4chcI",
+              "vzbXHpGdM8"
+            ],
+            "props": {
+              "align": "center",
+              "background": "",
+              "data-editor-type": "container",
+              "direction": "column",
+              "id": "ROOT",
+              "justify": "center",
+              "paddingX": "4",
+              "paddingY": "8",
+              "spaceBetween": "4",
+              "st-items-grow": 0,
+              "width": "100%"
+            },
+            "type": {
+              "resolvedName": "Container"
+            }
+          },
+          "vzbXHpGdM8": {
+            "custom": {
+              "type": "button"
+            },
+            "displayName": "Button",
+            "hidden": false,
+            "isCanvas": false,
+            "linkedNodes": {},
+            "nodes": [],
+            "parent": "ROOT",
+            "props": {
+              "children": "Submit",
+              "color": "primary",
+              "data-type": "button",
+              "formNoValidate": false,
+              "full-width": true,
+              "id": "vzbXHpGdM8",
+              "mode": "primary",
+              "size": "md",
+              "variant": "contained"
+            },
+            "type": {
+              "resolvedName": "Button"
+            }
+          }
+        },
         "id": "16",
+        "inputKeys": [
+          "fullName"
+        ],
         "inputsMetadata": [
           {
             "displayName": "Full Name Input",
             "key": "fullName"
+          }
+        ],
+        "interactions": [
+          {
+            "id": "vzbXHpGdM8",
+            "label": "Submit",
+            "type": "button"
           }
         ],
         "name": "User Information",
@@ -68,7 +190,7 @@
         "screenId": "SC2zEggMjmKAlHv6ROSJYBB0kk2Lg",
         "type": "screen",
         "view": {
-          "x": 4632,
+          "x": 2688,
           "y": 468
         }
       },
@@ -86,7 +208,7 @@
         },
         "type": "automated",
         "view": {
-          "x": 5112,
+          "x": 3180,
           "y": 504
         }
       },
@@ -120,7 +242,7 @@
           "rules": [
             {
               "interactionId": "xjdp2jjrwyo",
-              "taskId": "7"
+              "taskId": "16"
             },
             {
               "interactionId": "ELSE",
@@ -153,8 +275,8 @@
         "screenId": "SC2zEggQSzMFW7wncyrOtXjgZbwoi",
         "type": "screen",
         "view": {
-          "x": 6084,
-          "y": 408
+          "x": 4140,
+          "y": 456
         }
       },
       "22": {
@@ -208,7 +330,7 @@
         },
         "type": "condition",
         "view": {
-          "x": 5592,
+          "x": 3660,
           "y": 504
         }
       },
@@ -240,8 +362,8 @@
         },
         "type": "automated",
         "view": {
-          "x": 6564,
-          "y": 480
+          "x": 4632,
+          "y": 552
         }
       },
       "23.end": {
@@ -272,8 +394,8 @@
         },
         "type": "automated",
         "view": {
-          "x": 6564,
-          "y": 480
+          "x": 4632,
+          "y": 552
         }
       },
       "24": {
@@ -408,77 +530,6 @@
         "view": {
           "x": 1728,
           "y": 108
-        }
-      },
-      "27": {
-        "action": "update-user-otp-sms",
-        "id": "27",
-        "name": "Update User / OTP / SMS",
-        "next": {
-          "rules": [
-            {
-              "interactionId": "success",
-              "taskId": "28"
-            }
-          ]
-        },
-        "type": "automated",
-        "view": {
-          "x": 3180,
-          "y": 444
-        }
-      },
-      "28": {
-        "contextKeys": [
-          "sentTo.maskedPhone"
-        ],
-        "id": "28",
-        "inputsMetadata": [
-          {
-            "displayName": "One Time Code",
-            "key": "code"
-          }
-        ],
-        "name": "Verify OTP",
-        "next": {
-          "rules": [
-            {
-              "interactionId": "resend",
-              "taskId": "27"
-            },
-            {
-              "interactionId": "pnOqEGpL1b",
-              "taskId": "7"
-            },
-            {
-              "interactionId": "LPg4A5kpM-",
-              "taskId": "29"
-            }
-          ]
-        },
-        "screenId": "SC2zEggMYPXd5A7hYmOtWSmaEo0l1",
-        "type": "screen",
-        "view": {
-          "x": 3660,
-          "y": 432
-        }
-      },
-      "29": {
-        "action": "verify-code-otp-sms",
-        "id": "29",
-        "name": "Verify Code / OTP / SMS",
-        "next": {
-          "rules": [
-            {
-              "interactionId": "success",
-              "taskId": "16"
-            }
-          ]
-        },
-        "type": "automated",
-        "view": {
-          "x": 4140,
-          "y": 444
         }
       },
       "30": {
@@ -794,9 +845,21 @@
             "type": "inline",
             "value": "35.end"
           },
+          "loginHint": {
+            "type": "inline",
+            "value": ""
+          },
+          "popup": {
+            "type": "inline",
+            "value": ""
+          },
           "prompt": {
             "type": "inline",
             "value": []
+          },
+          "rawResponse": {
+            "type": "inline",
+            "value": ""
           },
           "redirectUrl": {
             "type": "inline",
@@ -849,7 +912,7 @@
           "rules": [
             {
               "interactionId": "1cycrxvv9k2",
-              "taskId": "7"
+              "taskId": "16"
             },
             {
               "interactionId": "ELSE",
@@ -870,39 +933,8 @@
         "next": {},
         "type": "automated",
         "view": {
-          "x": 7044,
-          "y": 552
-        }
-      },
-      "7": {
-        "id": "7",
-        "inputKeys": [
-          "fullName"
-        ],
-        "inputsMetadata": [
-          {
-            "displayName": "Phone Input",
-            "key": "phone"
-          },
-          {
-            "displayName": "Full Name Input",
-            "key": "fullName"
-          }
-        ],
-        "name": "User Information - Unverified - Phone Only",
-        "next": {
-          "rules": [
-            {
-              "interactionId": "VZn7G1QGq3",
-              "taskId": "27"
-            }
-          ]
-        },
-        "screenId": "SC2zEggQ1ePLOEEDYYWOKK0U6fqQs",
-        "type": "screen",
-        "view": {
-          "x": 2688,
-          "y": 420
+          "x": 5112,
+          "y": 660
         }
       },
       "start": {
@@ -1144,312 +1176,6 @@
     },
     {
       "contents": {
-        "FJm7_vlTEW": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "resend",
-            "pnOqEGpL1b"
-          ],
-          "parent": "yZNZ2ZVVu_",
-          "props": {
-            "align": "center",
-            "background": "",
-            "data-editor-type": "container",
-            "direction": "column",
-            "id": "FJm7_vlTEW",
-            "justify": "start",
-            "paddingX": "3",
-            "paddingY": "0",
-            "spaceBetween": "0",
-            "st-items-grow": 0,
-            "width": "100%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        },
-        "LPg4A5kpM-": {
-          "custom": {
-            "type": "oneTimeCode"
-          },
-          "displayName": "One Time Code",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "yZNZ2ZVVu_",
-          "props": {
-            "bordered": true,
-            "data-auto-submit": true,
-            "data-errormessage-pattern-mismatch": "Must be a 6 digit number",
-            "data-errormessage-value-missing": "Please fill out this field.",
-            "digits": 6,
-            "fullWidth": false,
-            "id": "LPg4A5kpM-",
-            "label": "",
-            "name": "code",
-            "required": true,
-            "size": "lg",
-            "type": "tel"
-          },
-          "type": {
-            "resolvedName": "CodeInput"
-          }
-        },
-        "QW6CWy1Z9D": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "fpDoUMsBUm"
-          ],
-          "parent": "yZNZ2ZVVu_",
-          "props": {
-            "align": "start",
-            "background": "#ffffff00",
-            "data-editor-type": "container",
-            "direction": "row",
-            "id": "QW6CWy1Z9D",
-            "justify": "center",
-            "paddingX": "4",
-            "paddingY": "4",
-            "spaceBetween": "1",
-            "st-items-grow": 0,
-            "width": "100%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        },
-        "ROOT": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "auED4dEJkJ",
-            "eBGiu9cYSb",
-            "yZNZ2ZVVu_"
-          ],
-          "props": {
-            "align": "center",
-            "background": "",
-            "data-editor-type": "container",
-            "direction": "column",
-            "id": "ROOT",
-            "justify": "center",
-            "paddingX": "4",
-            "paddingY": "4",
-            "spaceBetween": "5",
-            "st-items-grow": 0,
-            "width": "100%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        },
-        "auED4dEJkJ": {
-          "custom": {},
-          "displayName": "Text",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
-          "props": {
-            "children": "We've sent a message containing a 6-digit code to {{sentTo.maskedPhone}}",
-            "data-errormessage-value-missing": "Please fill out this field.",
-            "full-width": false,
-            "id": "auED4dEJkJ",
-            "isEnriched": true,
-            "italic": false,
-            "link-target-blank": true,
-            "mode": "primary",
-            "text-align": "center",
-            "variant": "subtitle1"
-          },
-          "type": {
-            "resolvedName": "Text"
-          }
-        },
-        "eBGiu9cYSb": {
-          "custom": {},
-          "displayName": "Text",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
-          "props": {
-            "children": "Enter it below\n\n",
-            "data-errormessage-value-missing": "Please fill out this field.",
-            "full-width": false,
-            "id": "eBGiu9cYSb",
-            "isEnriched": true,
-            "italic": false,
-            "link-target-blank": true,
-            "mode": "primary",
-            "text-align": "center",
-            "variant": "subtitle2"
-          },
-          "type": {
-            "resolvedName": "Text"
-          }
-        },
-        "fpDoUMsBUm": {
-          "custom": {},
-          "displayName": "Error Message",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "QW6CWy1Z9D",
-          "props": {
-            "data-type": "error-message",
-            "full-width": false,
-            "hide-when-empty": true,
-            "id": "fpDoUMsBUm",
-            "italic": false,
-            "mode": "error",
-            "text-align": "center",
-            "variant": "body1"
-          },
-          "type": {
-            "resolvedName": "ErrorMessage"
-          }
-        },
-        "pnOqEGpL1b": {
-          "custom": {
-            "type": "button"
-          },
-          "displayName": "Button",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "FJm7_vlTEW",
-          "props": {
-            "children": "Use a different number",
-            "color": "primary",
-            "data-type": "button",
-            "formNoValidate": true,
-            "full-width": true,
-            "id": "pnOqEGpL1b",
-            "mode": "primary",
-            "size": "sm",
-            "variant": "link"
-          },
-          "type": {
-            "resolvedName": "Button"
-          }
-        },
-        "resend": {
-          "custom": {
-            "type": "button"
-          },
-          "displayName": "Button",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "FJm7_vlTEW",
-          "props": {
-            "children": "Send again",
-            "color": "primary",
-            "data-type": "button",
-            "formNoValidate": true,
-            "full-width": true,
-            "id": "resend",
-            "mode": "primary",
-            "size": "sm",
-            "variant": "link"
-          },
-          "type": {
-            "resolvedName": "Button"
-          }
-        },
-        "yZNZ2ZVVu_": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "LPg4A5kpM-",
-            "QW6CWy1Z9D",
-            "FJm7_vlTEW"
-          ],
-          "parent": "ROOT",
-          "props": {
-            "align": "center",
-            "background": "",
-            "data-editor-type": "container",
-            "direction": "column",
-            "id": "yZNZ2ZVVu_",
-            "justify": "start",
-            "paddingX": "4",
-            "paddingY": "4",
-            "spaceBetween": "2.5",
-            "st-items-grow": 0,
-            "width": "100%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        }
-      },
-      "interactions": [
-        {
-          "id": "LPg4A5kpM-",
-          "label": "Verify OTP code"
-        },
-        {
-          "id": "pnOqEGpL1b",
-          "label": "Use a different number"
-        },
-        {
-          "id": "resend",
-          "label": "Send again"
-        }
-      ],
-      "screenId": "SC2zEggMYPXd5A7hYmOtWSmaEo0l1"
-    },
-    {
-      "contents": {
-        "4I3hQX95BZ": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "jqtNmu7Gql",
-            "UZHgESPGoK"
-          ],
-          "parent": "ROOT",
-          "props": {
-            "align": "center",
-            "background": "#ffffff00",
-            "data-editor-type": "container",
-            "direction": "row",
-            "id": "4I3hQX95BZ",
-            "justify": "between",
-            "paddingX": "4",
-            "paddingY": "2",
-            "spaceBetween": "8",
-            "width": "100%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        },
         "7mIfMql_Ht": {
           "custom": {},
           "displayName": "Text",
@@ -1462,7 +1188,9 @@
             "children": "To complete your sign up, please provide the following information",
             "full-width": false,
             "id": "7mIfMql_Ht",
+            "isEnriched": true,
             "italic": false,
+            "link-target-blank": true,
             "mode": "primary",
             "text-align": "center",
             "variant": "subtitle2"
@@ -1473,6 +1201,7 @@
         },
         "NQ8ig4chcI": {
           "custom": {
+            "contextKey": "displayName",
             "type": "input"
           },
           "displayName": "Full Name Input",
@@ -1483,9 +1212,12 @@
           "parent": "ROOT",
           "props": {
             "bordered": true,
+            "copy-to-clipboard": false,
+            "data-errormessage-value-missing": "Please fill out this field.",
             "full-width": true,
             "id": "NQ8ig4chcI",
             "label": "",
+            "label-type": "static",
             "max": 100,
             "name": "fullName",
             "placeholder": "Full Name",
@@ -1506,7 +1238,6 @@
           "nodes": [
             "7mIfMql_Ht",
             "NQ8ig4chcI",
-            "4I3hQX95BZ",
             "vzbXHpGdM8"
           ],
           "props": {
@@ -1519,49 +1250,11 @@
             "paddingX": "4",
             "paddingY": "8",
             "spaceBetween": "4",
+            "st-items-grow": 0,
             "width": "100%"
           },
           "type": {
             "resolvedName": "Container"
-          }
-        },
-        "UZHgESPGoK": {
-          "custom": {},
-          "displayName": "Image",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "4I3hQX95BZ",
-          "props": {
-            "alt": "Image",
-            "id": "UZHgESPGoK",
-            "src": "https://imgs.descope.com/flows/common/v1/green-checkmark.png",
-            "width": "30px"
-          },
-          "type": {
-            "resolvedName": "Image"
-          }
-        },
-        "jqtNmu7Gql": {
-          "custom": {},
-          "displayName": "Text",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "4I3hQX95BZ",
-          "props": {
-            "children": "Phone number: {{inputs.phone}}",
-            "full-width": false,
-            "id": "jqtNmu7Gql",
-            "italic": false,
-            "mode": "secondary",
-            "text-align": "center",
-            "variant": "body1"
-          },
-          "type": {
-            "resolvedName": "Text"
           }
         },
         "vzbXHpGdM8": {
@@ -1576,6 +1269,7 @@
           "parent": "ROOT",
           "props": {
             "children": "Submit",
+            "color": "primary",
             "data-type": "button",
             "formNoValidate": false,
             "full-width": true,
@@ -1592,7 +1286,8 @@
       "interactions": [
         {
           "id": "vzbXHpGdM8",
-          "label": "Submit"
+          "label": "Submit",
+          "type": "button"
         }
       ],
       "screenId": "SC2zEggMjmKAlHv6ROSJYBB0kk2Lg"
@@ -2289,253 +1984,6 @@
         }
       ],
       "screenId": "SC2zEggPv6yTfJadCXvZiCWZ9H2MA"
-    },
-    {
-      "contents": {
-        "3macLQfIKv": {
-          "custom": {},
-          "displayName": "Phone Input",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "jNFBRQNhqu",
-          "props": {
-            "bordered": true,
-            "country-input-placeholder": "Code",
-            "data-errormessage-missing-value": "Required",
-            "data-errormessage-pattern-mismatch": "Must be a valid phone number",
-            "data-errormessage-pattern-mismatch-too-short": "Please enter a valid phone",
-            "default-code": "autoDetect",
-            "full-width": true,
-            "id": "3macLQfIKv",
-            "label": "",
-            "max": 100,
-            "maxlength": "20",
-            "minlength": "6",
-            "name": "phone",
-            "pattern": "^\\+?\\d+$",
-            "phone-input-placeholder": "Phone number *",
-            "required": true,
-            "size": "md",
-            "type": "tel",
-            "variant": "countrySelection"
-          },
-          "type": {
-            "resolvedName": "Phone"
-          }
-        },
-        "8DdfdVbwWU": {
-          "custom": {},
-          "displayName": "Text",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
-          "props": {
-            "children": "To complete your sign up, please provide the following information",
-            "full-width": false,
-            "id": "8DdfdVbwWU",
-            "italic": false,
-            "mode": "primary",
-            "text-align": "center",
-            "variant": "subtitle2"
-          },
-          "type": {
-            "resolvedName": "Text"
-          }
-        },
-        "Qj7Jze34Ov": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "jNFBRQNhqu",
-            "vunvn4_jAv"
-          ],
-          "parent": "ROOT",
-          "props": {
-            "align": "center",
-            "background": "#ffffff00",
-            "data-editor-type": "container",
-            "direction": "row",
-            "id": "Qj7Jze34Ov",
-            "justify": "center",
-            "paddingX": "0",
-            "paddingY": "0",
-            "spaceBetween": "0",
-            "width": "100%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        },
-        "ROOT": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "8DdfdVbwWU",
-            "fJkZrzVYgH",
-            "Qj7Jze34Ov",
-            "Sc2XmeaKa8"
-          ],
-          "props": {
-            "align": "center",
-            "background": "",
-            "data-editor-type": "container",
-            "direction": "column",
-            "id": "ROOT",
-            "justify": "center",
-            "paddingX": "4",
-            "paddingY": "8",
-            "spaceBetween": "4",
-            "width": "100%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        },
-        "Sc2XmeaKa8": {
-          "custom": {},
-          "displayName": "Error Message",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
-          "props": {
-            "data-type": "error-message",
-            "full-width": false,
-            "hide-when-empty": true,
-            "id": "Sc2XmeaKa8",
-            "italic": false,
-            "mode": "error",
-            "text-align": "center",
-            "variant": "body1"
-          },
-          "type": {
-            "resolvedName": "ErrorMessage"
-          }
-        },
-        "VZn7G1QGq3": {
-          "custom": {
-            "type": "button"
-          },
-          "displayName": "Button",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "vunvn4_jAv",
-          "props": {
-            "auto-submit": true,
-            "children": "Verify",
-            "color": "primary",
-            "data-type": "button",
-            "formNoValidate": false,
-            "full-width": true,
-            "id": "VZn7G1QGq3",
-            "mode": "primary",
-            "size": "md",
-            "variant": "contained"
-          },
-          "type": {
-            "resolvedName": "Button"
-          }
-        },
-        "fJkZrzVYgH": {
-          "custom": {
-            "contextKey": "displayName",
-            "type": "input"
-          },
-          "displayName": "Full Name Input",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
-          "props": {
-            "bordered": true,
-            "full-width": true,
-            "id": "fJkZrzVYgH",
-            "label": "",
-            "max": 100,
-            "name": "fullName",
-            "placeholder": "Full Name",
-            "required": false,
-            "size": "md",
-            "type": "text"
-          },
-          "type": {
-            "resolvedName": "FullNameInput"
-          }
-        },
-        "jNFBRQNhqu": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "3macLQfIKv"
-          ],
-          "parent": "Qj7Jze34Ov",
-          "props": {
-            "align": "start",
-            "background": "#ffffff00",
-            "data-editor-type": "container",
-            "direction": "row",
-            "id": "jNFBRQNhqu",
-            "justify": "center",
-            "paddingX": "0",
-            "paddingY": "0",
-            "spaceBetween": "4",
-            "width": "75%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        },
-        "vunvn4_jAv": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "VZn7G1QGq3"
-          ],
-          "parent": "Qj7Jze34Ov",
-          "props": {
-            "align": "start",
-            "background": "#ffffff00",
-            "data-editor-type": "container",
-            "direction": "row",
-            "id": "vunvn4_jAv",
-            "justify": "center",
-            "paddingX": "2",
-            "paddingY": "0",
-            "spaceBetween": "0",
-            "width": "25%"
-          },
-          "type": {
-            "resolvedName": "Container"
-          }
-        }
-      },
-      "interactions": [
-        {
-          "id": "VZn7G1QGq3",
-          "label": "Verify"
-        }
-      ],
-      "screenId": "SC2zEggQ1ePLOEEDYYWOKK0U6fqQs"
     },
     {
       "contents": {
