@@ -91,6 +91,36 @@
               "resolvedName": "Text"
             }
           },
+          "MbpXvB0sxb": {
+            "custom": {
+              "subType": "social",
+              "type": "button"
+            },
+            "displayName": "Facebook Button",
+            "hidden": false,
+            "isCanvas": false,
+            "linkedNodes": {},
+            "nodes": [],
+            "parent": "zSbBTJOpe0",
+            "props": {
+              "aria-label": "Sign in with Facebook",
+              "children": "Sign in with Facebook",
+              "color": "primary",
+              "data-descope-provider": "facebook",
+              "data-type": "social",
+              "formNoValidate": true,
+              "full-width": true,
+              "id": "MbpXvB0sxb",
+              "size": "md",
+              "st-label-spacing": "10px",
+              "startIcon": "facebook",
+              "startIconColorText": false,
+              "variant": "outline"
+            },
+            "type": {
+              "resolvedName": "FacebookButton"
+            }
+          },
           "O6g57IzhQ9": {
             "custom": {},
             "displayName": "Error Message",
@@ -357,6 +387,7 @@
             "linkedNodes": {},
             "nodes": [
               "058XUDlhFP",
+              "MbpXvB0sxb",
               "gDYTgzMsxf"
             ],
             "parent": "ROOT",
@@ -406,6 +437,13 @@
             "id": "gDYTgzMsxf",
             "label": "Continue with Passkeys",
             "type": "button"
+          },
+          {
+            "icon": "facebook",
+            "id": "MbpXvB0sxb",
+            "label": "Sign in with Facebook",
+            "subType": "social",
+            "type": "button"
           }
         ],
         "name": "Welcome Screen",
@@ -421,6 +459,10 @@
             },
             {
               "interactionId": "058XUDlhFP",
+              "taskId": "35"
+            },
+            {
+              "interactionId": "MbpXvB0sxb",
               "taskId": "35"
             }
           ]
@@ -2034,6 +2076,36 @@
             "resolvedName": "Text"
           }
         },
+        "MbpXvB0sxb": {
+          "custom": {
+            "subType": "social",
+            "type": "button"
+          },
+          "displayName": "Facebook Button",
+          "hidden": false,
+          "isCanvas": false,
+          "linkedNodes": {},
+          "nodes": [],
+          "parent": "zSbBTJOpe0",
+          "props": {
+            "aria-label": "Sign in with Facebook",
+            "children": "Sign in with Facebook",
+            "color": "primary",
+            "data-descope-provider": "facebook",
+            "data-type": "social",
+            "formNoValidate": true,
+            "full-width": true,
+            "id": "MbpXvB0sxb",
+            "size": "md",
+            "st-label-spacing": "10px",
+            "startIcon": "facebook",
+            "startIconColorText": false,
+            "variant": "outline"
+          },
+          "type": {
+            "resolvedName": "FacebookButton"
+          }
+        },
         "O6g57IzhQ9": {
           "custom": {},
           "displayName": "Error Message",
@@ -2300,6 +2372,7 @@
           "linkedNodes": {},
           "nodes": [
             "058XUDlhFP",
+            "MbpXvB0sxb",
             "gDYTgzMsxf"
           ],
           "parent": "ROOT",
@@ -2338,6 +2411,13 @@
           "icon": "passkey",
           "id": "gDYTgzMsxf",
           "label": "Continue with Passkeys",
+          "type": "button"
+        },
+        {
+          "icon": "facebook",
+          "id": "MbpXvB0sxb",
+          "label": "Sign in with Facebook",
+          "subType": "social",
           "type": "button"
         }
       ],
