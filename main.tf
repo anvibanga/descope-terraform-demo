@@ -3,8 +3,8 @@ provider "descope" {
   management_key = var.management_key
 }
 
-resource "descope_project" "project" {
-  name = "Terraform Demo - PROD"
+resource "descope_project" "my_project" {
+  name = "Tee Hee Tees - PROD"
   environment = "production"
 
   flows = {
@@ -16,29 +16,46 @@ resource "descope_project" "project" {
     },
     "sign-up" = {
       data = file("${path.module}/flows/sign-up.json")
+    },
+    "idp-initiated-sso" = {
+      data = file("${path.module}/flows/idp-initiated-sso.json")
     }
   }
 
   connectors = {
+    "http": [
+      {
+        name = "Radiant Logic"
+        description = "Radiant Logic Connector for JIT"
+        base_url = "https://test-descope.free.beeceptor.com"
+      }
+    ],
     "hibp": [
       {
         name = "Have I Been Pwned"
         description = "Connector for Checking Password Breaches"
       }
     ],
+    "forter": [
+      {
+        name = "Forter"
+        secret_key = "<secret_key>"
+        site_id = "<example_site_id>"
+      }
+    ],
     "smtp": [
       {
-        name = "Email Connector"
-        description = "Email Connector"
+        name = "SMTP Connector"
+        authentication = {
+          "username" = "a1590ce4b6f834"
+          "password" = "bb6e89779e35ff"
+        }
         sender = {
-          email = "support@company.com"
+          "email" = "bd3ed16c48-30b04d+1@inbox.mailtrap.io"
         }
         server = {
-          host = "587"
-        }
-        authentication = {
-          username = "test"
-          password = "password1"
+          "host" = "sandbox.smtp.mailtrap.io"
+          "port" = "587"
         }
       }
     ]
