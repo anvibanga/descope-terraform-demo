@@ -33,7 +33,6 @@
           ]
         },
         "screenId": "SC2zEggNR4YIb7tkweYZ0ArqdWRaq",
-        "screenId": "SC2zEggNR4YIb7tkweYZ0ArqdWRaq",
         "type": "screen",
         "view": {
           "x": 180,
@@ -51,7 +50,6 @@
             }
           ]
         },
-        "screenId": "SC2zEggMxIvxxm5o5zwPS1dIeuzth",
         "screenId": "SC2zEggMxIvxxm5o5zwPS1dIeuzth",
         "type": "screen",
         "view": {
@@ -189,7 +187,6 @@
           ]
         },
         "screenId": "SC2zEggMgeBJgGZ5wOkBoE3TDRCyz",
-        "screenId": "SC2zEggMgeBJgGZ5wOkBoE3TDRCyz",
         "type": "screen",
         "view": {
           "x": 624,
@@ -200,7 +197,6 @@
         "id": "18",
         "name": "Verified Successfully",
         "next": {},
-        "screenId": "SC2zEggR6k1hoCAAAZI36Qd3qSiHd",
         "screenId": "SC2zEggR6k1hoCAAAZI36Qd3qSiHd",
         "type": "screen",
         "view": {
@@ -248,7 +244,6 @@
             }
           ]
         },
-        "screenId": "SC2zEggKMyEo8bhJjG5PFbYwbsbw6",
         "screenId": "SC2zEggKMyEo8bhJjG5PFbYwbsbw6",
         "type": "screen",
         "view": {
@@ -498,7 +493,6 @@
           ]
         },
         "screenId": "SC2zEggRYmqTg6vmv43dbeghCKrdR",
-        "screenId": "SC2zEggRYmqTg6vmv43dbeghCKrdR",
         "type": "screen",
         "view": {
           "x": 1548,
@@ -509,7 +503,6 @@
         "id": "26",
         "name": "Verified Successfully",
         "next": {},
-        "screenId": "SC2zEggNLfiBGMjP65EPvUCby2Xqa",
         "screenId": "SC2zEggNLfiBGMjP65EPvUCby2Xqa",
         "type": "screen",
         "view": {
@@ -664,7 +657,6 @@
           ]
         },
         "screenId": "SC2zEggM6ZNrUL6S3Wg34oEi08KtX",
-        "screenId": "SC2zEggM6ZNrUL6S3Wg34oEi08KtX",
         "type": "screen",
         "view": {
           "x": 1512,
@@ -700,37 +692,20 @@
       }
     ]
   },
-  "references": {},
   "screens": [
     {
       "contents": {
         "CGBTyRvfUF": {
-        "CGBTyRvfUF": {
           "custom": {
             "type": "oneTimeCode"
-            "type": "oneTimeCode"
           },
-          "displayName": "One Time Code",
           "displayName": "One Time Code",
           "hidden": false,
           "isCanvas": false,
           "linkedNodes": {},
           "nodes": [],
           "parent": "yZNZ2ZVVu_",
-          "parent": "yZNZ2ZVVu_",
           "props": {
-            "bordered": true,
-            "data-auto-submit": true,
-            "data-errormessage-pattern-mismatch": "Must be a 6 digit number",
-            "data-errormessage-value-missing": "Please fill out this field.",
-            "digits": 6,
-            "fullWidth": false,
-            "id": "CGBTyRvfUF",
-            "label": "",
-            "name": "code",
-            "required": true,
-            "size": "lg",
-            "type": "tel"
             "bordered": true,
             "data-auto-submit": true,
             "data-errormessage-pattern-mismatch": "Must be a 6 digit number",
@@ -746,23 +721,14 @@
           },
           "type": {
             "resolvedName": "CodeInput"
-            "resolvedName": "CodeInput"
           }
         },
         "FJm7_vlTEW": {
-        "FJm7_vlTEW": {
           "custom": {},
-          "displayName": "Container",
           "displayName": "Container",
           "hidden": false,
           "isCanvas": true,
-          "isCanvas": true,
           "linkedNodes": {},
-          "nodes": [
-            "resend",
-            "pnOqEGpL1b"
-          ],
-          "parent": "yZNZ2ZVVu_",
           "nodes": [
             "resend",
             "pnOqEGpL1b"
@@ -780,36 +746,17 @@
             "spaceBetween": "0",
             "st-items-grow": 0,
             "width": "100%"
-            "align": "center",
-            "background": "",
-            "data-editor-type": "container",
-            "direction": "column",
-            "id": "FJm7_vlTEW",
-            "justify": "start",
-            "paddingX": "3",
-            "paddingY": "0",
-            "spaceBetween": "0",
-            "st-items-grow": 0,
-            "width": "100%"
           },
           "type": {
-            "resolvedName": "Container"
             "resolvedName": "Container"
           }
         },
         "QW6CWy1Z9D": {
-        "QW6CWy1Z9D": {
           "custom": {},
-          "displayName": "Container",
           "displayName": "Container",
           "hidden": false,
           "isCanvas": true,
-          "isCanvas": true,
           "linkedNodes": {},
-          "nodes": [
-            "fpDoUMsBUm"
-          ],
-          "parent": "yZNZ2ZVVu_",
           "nodes": [
             "fpDoUMsBUm"
           ],
@@ -826,20 +773,8 @@
             "spaceBetween": "1",
             "st-items-grow": 0,
             "width": "100%"
-            "align": "start",
-            "background": "#ffffff00",
-            "data-editor-type": "container",
-            "direction": "row",
-            "id": "QW6CWy1Z9D",
-            "justify": "center",
-            "paddingX": "4",
-            "paddingY": "4",
-            "spaceBetween": "1",
-            "st-items-grow": 0,
-            "width": "100%"
           },
           "type": {
-            "resolvedName": "Container"
             "resolvedName": "Container"
           }
         },
@@ -850,9 +785,6 @@
           "isCanvas": true,
           "linkedNodes": {},
           "nodes": [
-            "auED4dEJkJ",
-            "eBGiu9cYSb",
-            "yZNZ2ZVVu_"
             "auED4dEJkJ",
             "eBGiu9cYSb",
             "yZNZ2ZVVu_"
@@ -868,7 +800,6 @@
             "paddingY": "4",
             "spaceBetween": "5",
             "st-items-grow": 0,
-            "st-items-grow": 0,
             "width": "100%"
           },
           "type": {
@@ -876,15 +807,11 @@
           }
         },
         "auED4dEJkJ": {
-        "auED4dEJkJ": {
           "custom": {},
-          "displayName": "Text",
           "displayName": "Text",
           "hidden": false,
           "isCanvas": false,
-          "isCanvas": false,
           "linkedNodes": {},
-          "nodes": [],
           "nodes": [],
           "parent": "ROOT",
           "props": {
@@ -898,23 +825,11 @@
             "mode": "primary",
             "text-align": "center",
             "variant": "subtitle1"
-            "children": "We've sent a message containing a 6-digit code to {{sentTo.maskedPhone}}",
-            "data-errormessage-value-missing": "Please fill out this field.",
-            "full-width": false,
-            "id": "auED4dEJkJ",
-            "isEnriched": true,
-            "italic": false,
-            "link-target-blank": true,
-            "mode": "primary",
-            "text-align": "center",
-            "variant": "subtitle1"
           },
           "type": {
             "resolvedName": "Text"
-            "resolvedName": "Text"
           }
         },
-        "eBGiu9cYSb": {
         "eBGiu9cYSb": {
           "custom": {},
           "displayName": "Text",
@@ -926,48 +841,19 @@
           "props": {
             "children": "Enter it below\n\n",
             "data-errormessage-value-missing": "Please fill out this field.",
-            "children": "Enter it below\n\n",
-            "data-errormessage-value-missing": "Please fill out this field.",
             "full-width": false,
-            "id": "eBGiu9cYSb",
-            "isEnriched": true,
             "id": "eBGiu9cYSb",
             "isEnriched": true,
             "italic": false,
             "link-target-blank": true,
-            "link-target-blank": true,
             "mode": "primary",
             "text-align": "center",
-            "variant": "subtitle2"
             "variant": "subtitle2"
           },
           "type": {
             "resolvedName": "Text"
           }
         },
-        "fpDoUMsBUm": {
-          "custom": {},
-          "displayName": "Error Message",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "QW6CWy1Z9D",
-          "props": {
-            "data-type": "error-message",
-            "full-width": false,
-            "hide-when-empty": true,
-            "id": "fpDoUMsBUm",
-            "italic": false,
-            "mode": "error",
-            "text-align": "center",
-            "variant": "body1"
-          },
-          "type": {
-            "resolvedName": "ErrorMessage"
-          }
-        },
-        "pnOqEGpL1b": {
         "fpDoUMsBUm": {
           "custom": {},
           "displayName": "Error Message",
@@ -993,18 +879,14 @@
         "pnOqEGpL1b": {
           "custom": {
             "type": "button"
-            "type": "button"
           },
-          "displayName": "Button",
           "displayName": "Button",
           "hidden": false,
           "isCanvas": false,
           "linkedNodes": {},
           "nodes": [],
           "parent": "FJm7_vlTEW",
-          "parent": "FJm7_vlTEW",
           "props": {
-            "children": "Use a different number",
             "children": "Use a different number",
             "color": "primary",
             "data-type": "button",
@@ -1014,16 +896,8 @@
             "mode": "primary",
             "size": "sm",
             "variant": "link"
-            "data-type": "button",
-            "formNoValidate": true,
-            "full-width": true,
-            "id": "pnOqEGpL1b",
-            "mode": "primary",
-            "size": "sm",
-            "variant": "link"
           },
           "type": {
-            "resolvedName": "Button"
             "resolvedName": "Button"
           }
         },
@@ -1037,52 +911,19 @@
           "linkedNodes": {},
           "nodes": [],
           "parent": "FJm7_vlTEW",
-          "parent": "FJm7_vlTEW",
           "props": {
             "children": "Send again",
             "color": "primary",
-            "color": "primary",
             "data-type": "button",
-            "formNoValidate": true,
             "formNoValidate": true,
             "full-width": true,
             "id": "resend",
             "mode": "primary",
             "size": "sm",
             "variant": "link"
-            "variant": "link"
           },
           "type": {
             "resolvedName": "Button"
-          }
-        },
-        "yZNZ2ZVVu_": {
-          "custom": {},
-          "displayName": "Container",
-          "hidden": false,
-          "isCanvas": true,
-          "linkedNodes": {},
-          "nodes": [
-            "CGBTyRvfUF",
-            "QW6CWy1Z9D",
-            "FJm7_vlTEW"
-          ],
-          "parent": "ROOT",
-          "props": {
-            "align": "center",
-            "background": "",
-            "data-editor-type": "container",
-            "direction": "column",
-            "id": "yZNZ2ZVVu_",
-            "justify": "start",
-            "paddingX": "4",
-            "paddingY": "4",
-            "spaceBetween": "2.5",
-            "st-items-grow": 0,
-            "width": "100%"
-          },
-          "type": {
-            "resolvedName": "Container"
           }
         },
         "yZNZ2ZVVu_": {
@@ -1119,12 +960,8 @@
         {
           "id": "CGBTyRvfUF",
           "label": "Verify OTP code"
-          "id": "CGBTyRvfUF",
-          "label": "Verify OTP code"
         },
         {
-          "id": "pnOqEGpL1b",
-          "label": "Use a different number"
           "id": "pnOqEGpL1b",
           "label": "Use a different number"
         },
@@ -1133,7 +970,6 @@
           "label": "Send again"
         }
       ],
-      "screenId": "SC2zEggKMyEo8bhJjG5PFbYwbsbw6"
       "screenId": "SC2zEggKMyEo8bhJjG5PFbYwbsbw6"
     },
     {
@@ -1372,33 +1208,20 @@
         }
       ],
       "screenId": "SC2zEggM6ZNrUL6S3Wg34oEi08KtX"
-      "screenId": "SC2zEggM6ZNrUL6S3Wg34oEi08KtX"
     },
     {
       "contents": {
         "EbW8KMdjAx": {
-        "EbW8KMdjAx": {
           "custom": {
             "type": "button"
-            "type": "button"
           },
-          "displayName": "Button",
           "displayName": "Button",
           "hidden": false,
           "isCanvas": false,
           "linkedNodes": {},
           "nodes": [],
           "parent": "WzZtEzEpyY",
-          "parent": "WzZtEzEpyY",
           "props": {
-            "children": "Choose another authentication method",
-            "data-type": "button",
-            "formNoValidate": false,
-            "full-width": true,
-            "id": "EbW8KMdjAx",
-            "mode": "primary",
-            "size": "sm",
-            "variant": "link"
             "children": "Choose another authentication method",
             "data-type": "button",
             "formNoValidate": false,
@@ -1410,20 +1233,14 @@
           },
           "type": {
             "resolvedName": "Button"
-            "resolvedName": "Button"
           }
         },
         "LgBFKYoM2h": {
-        "LgBFKYoM2h": {
           "custom": {},
-          "displayName": "Error Message",
           "displayName": "Error Message",
           "hidden": false,
           "isCanvas": false,
-          "isCanvas": false,
           "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
           "nodes": [],
           "parent": "ROOT",
           "props": {
@@ -1434,30 +1251,17 @@
             "mode": "error",
             "text-align": "center",
             "variant": "body1"
-            "data-type": "error-message",
-            "full-width": false,
-            "id": "LgBFKYoM2h",
-            "italic": false,
-            "mode": "error",
-            "text-align": "center",
-            "variant": "body1"
           },
           "type": {
-            "resolvedName": "ErrorMessage"
             "resolvedName": "ErrorMessage"
           }
         },
         "R4ubbo8hKX": {
-        "R4ubbo8hKX": {
           "custom": {},
-          "displayName": "Text",
           "displayName": "Text",
           "hidden": false,
           "isCanvas": false,
-          "isCanvas": false,
           "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
           "nodes": [],
           "parent": "ROOT",
           "props": {
@@ -1468,16 +1272,8 @@
             "mode": "primary",
             "text-align": "center",
             "variant": "subtitle2"
-            "children": "Click the link in the email to continue",
-            "full-width": false,
-            "id": "R4ubbo8hKX",
-            "italic": false,
-            "mode": "primary",
-            "text-align": "center",
-            "variant": "subtitle2"
           },
           "type": {
-            "resolvedName": "Text"
             "resolvedName": "Text"
           }
         },
@@ -1488,11 +1284,6 @@
           "isCanvas": true,
           "linkedNodes": {},
           "nodes": [
-            "hLL454bn-h",
-            "R4ubbo8hKX",
-            "lpP_khmMrA",
-            "WzZtEzEpyY",
-            "LgBFKYoM2h"
             "hLL454bn-h",
             "R4ubbo8hKX",
             "lpP_khmMrA",
@@ -1516,15 +1307,12 @@
           }
         },
         "WzZtEzEpyY": {
-        "WzZtEzEpyY": {
           "custom": {},
           "displayName": "Container",
           "hidden": false,
           "isCanvas": true,
           "linkedNodes": {},
           "nodes": [
-            "resend",
-            "EbW8KMdjAx"
             "resend",
             "EbW8KMdjAx"
           ],
@@ -1535,19 +1323,15 @@
             "data-editor-type": "container",
             "direction": "column",
             "id": "WzZtEzEpyY",
-            "id": "WzZtEzEpyY",
             "justify": "start",
             "paddingX": "4",
             "paddingY": "4",
-            "spaceBetween": "1.5",
             "spaceBetween": "1.5",
             "width": "100%"
           },
           "type": {
             "resolvedName": "Container"
           }
-        },
-        "hLL454bn-h": {
         },
         "hLL454bn-h": {
           "custom": {},
@@ -1561,7 +1345,6 @@
             "children": "We've sent a verification link to {{sentTo.maskedEmail}}",
             "full-width": false,
             "id": "hLL454bn-h",
-            "id": "hLL454bn-h",
             "italic": false,
             "mode": "primary",
             "text-align": "center",
@@ -1571,7 +1354,6 @@
             "resolvedName": "Text"
           }
         },
-        "lpP_khmMrA": {
         "lpP_khmMrA": {
           "custom": {
             "type": "polling"
@@ -1585,7 +1367,6 @@
           "props": {
             "color": "primary",
             "data-type": "polling",
-            "id": "lpP_khmMrA",
             "id": "lpP_khmMrA",
             "size": "md",
             "variant": "linear"
@@ -1603,7 +1384,6 @@
           "isCanvas": false,
           "linkedNodes": {},
           "nodes": [],
-          "parent": "WzZtEzEpyY",
           "parent": "WzZtEzEpyY",
           "props": {
             "children": "Send again",
@@ -1626,10 +1406,6 @@
           "label": "Choose another authentication method"
         },
         {
-          "id": "EbW8KMdjAx",
-          "label": "Choose another authentication method"
-        },
-        {
           "id": "polling",
           "label": "Polling"
         },
@@ -1638,7 +1414,6 @@
           "label": "Send again"
         }
       ],
-      "screenId": "SC2zEggMgeBJgGZ5wOkBoE3TDRCyz"
       "screenId": "SC2zEggMgeBJgGZ5wOkBoE3TDRCyz"
     },
     {
@@ -1907,6 +1682,7 @@
           }
         }
       },
+      "interactions": [],
       "screenId": "SC2zEggNLfiBGMjP65EPvUCby2Xqa"
     },
     {
@@ -2331,7 +2107,6 @@
         }
       ],
       "screenId": "SC2zEggNR4YIb7tkweYZ0ArqdWRaq"
-      "screenId": "SC2zEggNR4YIb7tkweYZ0ArqdWRaq"
     },
     {
       "contents": {
@@ -2423,14 +2198,13 @@
           }
         }
       },
+      "interactions": [],
       "screenId": "SC2zEggR6k1hoCAAAZI36Qd3qSiHd"
     },
     {
       "contents": {
         "7ekqaI_T5T": {
-        "7ekqaI_T5T": {
           "custom": {},
-          "displayName": "Text",
           "displayName": "Text",
           "hidden": false,
           "isCanvas": false,
@@ -2439,15 +2213,11 @@
           "parent": "ROOT",
           "props": {
             "children": "We've sent a verification link to {{sentTo.maskedEmail}}",
-            "children": "We've sent a verification link to {{sentTo.maskedEmail}}",
             "full-width": false,
-            "id": "7ekqaI_T5T",
             "id": "7ekqaI_T5T",
             "italic": false,
             "mode": "primary",
-            "mode": "primary",
             "text-align": "center",
-            "variant": "subtitle1"
             "variant": "subtitle1"
           },
           "type": {
@@ -2473,31 +2243,8 @@
           },
           "type": {
             "resolvedName": "PollingLoader"
-            "resolvedName": "Text"
           }
         },
-        "83rQshkg1S": {
-          "custom": {
-            "type": "polling"
-          },
-          "displayName": "Polling",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "ROOT",
-          "props": {
-            "color": "primary",
-            "data-type": "polling",
-            "id": "83rQshkg1S",
-            "size": "md",
-            "variant": "linear"
-          },
-          "type": {
-            "resolvedName": "PollingLoader"
-          }
-        },
-        "HolaA10NeP": {
         "HolaA10NeP": {
           "custom": {},
           "displayName": "Text",
@@ -2508,14 +2255,11 @@
           "parent": "ROOT",
           "props": {
             "children": "Click the link in the email to continue",
-            "children": "Click the link in the email to continue",
             "full-width": false,
-            "id": "HolaA10NeP",
             "id": "HolaA10NeP",
             "italic": false,
             "mode": "primary",
             "text-align": "center",
-            "variant": "subtitle2"
             "variant": "subtitle2"
           },
           "type": {
@@ -2523,17 +2267,11 @@
           }
         },
         "KJo506s04p": {
-        "KJo506s04p": {
           "custom": {},
-          "displayName": "Container",
           "displayName": "Container",
           "hidden": false,
           "isCanvas": true,
-          "isCanvas": true,
           "linkedNodes": {},
-          "nodes": [
-            "resend"
-          ],
           "nodes": [
             "resend"
           ],
@@ -2549,19 +2287,8 @@
             "paddingY": "4",
             "spaceBetween": "1.5",
             "width": "100%"
-            "align": "center",
-            "background": "",
-            "data-editor-type": "container",
-            "direction": "column",
-            "id": "KJo506s04p",
-            "justify": "start",
-            "paddingX": "4",
-            "paddingY": "4",
-            "spaceBetween": "1.5",
-            "width": "100%"
           },
           "type": {
-            "resolvedName": "Container"
             "resolvedName": "Container"
           }
         },
@@ -2577,11 +2304,6 @@
             "83rQshkg1S",
             "KJo506s04p",
             "SFhfbUwXin"
-            "7ekqaI_T5T",
-            "HolaA10NeP",
-            "83rQshkg1S",
-            "KJo506s04p",
-            "SFhfbUwXin"
           ],
           "props": {
             "align": "center",
@@ -2591,8 +2313,6 @@
             "id": "ROOT",
             "justify": "center",
             "paddingX": "4",
-            "paddingY": "4",
-            "spaceBetween": "5",
             "paddingY": "4",
             "spaceBetween": "5",
             "width": "100%"
