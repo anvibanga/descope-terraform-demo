@@ -8,7 +8,9 @@
         ],
         "calculatedInputKeys": true,
         "clientScripts": [],
+        "componentsConditions": [],
         "componentsConnectors": {},
+        "connectorComponentProps": {},
         "dynamicSelects": {},
         "htmlTemplate": {
           "058XUDlhFP": {
@@ -36,6 +38,7 @@
               "st-label-spacing": "10px",
               "startIcon": "google",
               "startIconColorText": false,
+              "tooltipText": "Tooltip text",
               "variant": "outline"
             },
             "type": {
@@ -62,6 +65,7 @@
               "id": "COcMh1vzSn",
               "mode": "primary",
               "size": "md",
+              "tooltipText": "Tooltip text",
               "variant": "contained"
             },
             "type": {
@@ -85,40 +89,11 @@
               "link-target-blank": true,
               "mode": "primary",
               "text-align": "center",
+              "tooltipText": "Tooltip text",
               "variant": "body1"
             },
             "type": {
               "resolvedName": "Text"
-            }
-          },
-          "MbpXvB0sxb": {
-            "custom": {
-              "subType": "social",
-              "type": "button"
-            },
-            "displayName": "Facebook Button",
-            "hidden": false,
-            "isCanvas": false,
-            "linkedNodes": {},
-            "nodes": [],
-            "parent": "zSbBTJOpe0",
-            "props": {
-              "aria-label": "Sign in with Facebook",
-              "children": "Sign in with Facebook",
-              "color": "primary",
-              "data-descope-provider": "facebook",
-              "data-type": "social",
-              "formNoValidate": true,
-              "full-width": true,
-              "id": "MbpXvB0sxb",
-              "size": "md",
-              "st-label-spacing": "10px",
-              "startIcon": "facebook",
-              "startIconColorText": false,
-              "variant": "outline"
-            },
-            "type": {
-              "resolvedName": "FacebookButton"
             }
           },
           "O6g57IzhQ9": {
@@ -206,6 +181,37 @@
               "resolvedName": "Container"
             }
           },
+          "XOqno_c7Ro": {
+            "custom": {
+              "subType": "social",
+              "type": "button"
+            },
+            "displayName": "Microsoft Button",
+            "hidden": false,
+            "isCanvas": false,
+            "linkedNodes": {},
+            "nodes": [],
+            "parent": "zSbBTJOpe0",
+            "props": {
+              "aria-label": "Sign in with Microsoft",
+              "children": "Sign in with Microsoft",
+              "color": "primary",
+              "data-descope-provider": "microsoft",
+              "data-type": "social",
+              "formNoValidate": true,
+              "full-width": true,
+              "id": "XOqno_c7Ro",
+              "size": "md",
+              "st-label-spacing": "10px",
+              "startIcon": "microsoft",
+              "startIconColorText": false,
+              "tooltipText": "Tooltip text",
+              "variant": "outline"
+            },
+            "type": {
+              "resolvedName": "MicrosoftButton"
+            }
+          },
           "YsKt52415F": {
             "custom": {
               "type": "input"
@@ -254,6 +260,7 @@
               "link-target-blank": true,
               "mode": "primary",
               "text-align": "center",
+              "tooltipText": "Tooltip text",
               "variant": "h3"
             },
             "type": {
@@ -277,6 +284,7 @@
               "link-target-blank": true,
               "mode": "primary",
               "text-align": "center",
+              "tooltipText": "Tooltip text",
               "variant": "body1"
             },
             "type": {
@@ -307,6 +315,7 @@
               "st-label-spacing": "10px",
               "startIcon": "passkey",
               "startIconColorText": true,
+              "tooltipText": "Tooltip text",
               "variant": "outline"
             },
             "type": {
@@ -330,6 +339,7 @@
               "mode": "primary",
               "target": "_blank",
               "text-align": "center",
+              "tooltipText": "Tooltip text",
               "variant": "body1"
             },
             "type": {
@@ -353,6 +363,7 @@
               "mode": "primary",
               "target": "_blank",
               "text-align": "center",
+              "tooltipText": "Tooltip text",
               "variant": "body1"
             },
             "type": {
@@ -387,7 +398,7 @@
             "linkedNodes": {},
             "nodes": [
               "058XUDlhFP",
-              "MbpXvB0sxb",
+              "XOqno_c7Ro",
               "gDYTgzMsxf"
             ],
             "parent": "ROOT",
@@ -439,9 +450,9 @@
             "type": "button"
           },
           {
-            "icon": "facebook",
-            "id": "MbpXvB0sxb",
-            "label": "Sign in with Facebook",
+            "icon": "microsoft",
+            "id": "XOqno_c7Ro",
+            "label": "Sign in with Microsoft",
             "subType": "social",
             "type": "button"
           }
@@ -462,11 +473,12 @@
               "taskId": "35"
             },
             {
-              "interactionId": "MbpXvB0sxb",
+              "interactionId": "XOqno_c7Ro",
               "taskId": "35"
             }
           ]
         },
+        "recoveryCodesData": [],
         "screenId": "SC2zEggPv6yTfJadCXvZiCWZ9H2MA",
         "type": "screen",
         "view": {
@@ -686,6 +698,7 @@
         }
       },
       "21": {
+        "allInputKeys": [],
         "id": "21",
         "inputsMetadata": [],
         "name": "Promote Biometrics",
@@ -920,6 +933,7 @@
         }
       },
       "25": {
+        "allInputKeys": [],
         "contextKeys": [
           "sentTo.maskedEmail"
         ],
@@ -950,6 +964,7 @@
         }
       },
       "26": {
+        "allInputKeys": [],
         "id": "26",
         "inputsMetadata": [],
         "name": "Verified Successfully",
@@ -1126,6 +1141,7 @@
         }
       },
       "32": {
+        "allInputKeys": [],
         "contextKeys": [
           "sentTo.maskedEmail"
         ],
@@ -1152,6 +1168,7 @@
         }
       },
       "33": {
+        "allInputKeys": [],
         "id": "33",
         "inputsMetadata": [],
         "name": "Verified Successfully",
@@ -1223,6 +1240,10 @@
           "exchangeStepId": {
             "type": "inline",
             "value": "35.end"
+          },
+          "forceNonNative": {
+            "type": "inline",
+            "value": ""
           },
           "loginHint": {
             "type": "inline",
@@ -1387,7 +1408,7 @@
   },
   "flowId": "sign-up-or-in",
   "metadata": {
-    "componentsVersion": "2.0.557",
+    "componentsVersion": "3.2.0",
     "description": "Default Descope Sign Up or In flow; enables users to sign up or in via Magic Link, Social Logins or Biometrics. For Biometrics, Email is verified if needed. Registration information includes Full Name and Phone (verification via OTP).",
     "name": "Sign Up or In",
     "sharedInteractions": [
@@ -2021,6 +2042,7 @@
             "st-label-spacing": "10px",
             "startIcon": "google",
             "startIconColorText": false,
+            "tooltipText": "Tooltip text",
             "variant": "outline"
           },
           "type": {
@@ -2047,6 +2069,7 @@
             "id": "COcMh1vzSn",
             "mode": "primary",
             "size": "md",
+            "tooltipText": "Tooltip text",
             "variant": "contained"
           },
           "type": {
@@ -2070,40 +2093,11 @@
             "link-target-blank": true,
             "mode": "primary",
             "text-align": "center",
+            "tooltipText": "Tooltip text",
             "variant": "body1"
           },
           "type": {
             "resolvedName": "Text"
-          }
-        },
-        "MbpXvB0sxb": {
-          "custom": {
-            "subType": "social",
-            "type": "button"
-          },
-          "displayName": "Facebook Button",
-          "hidden": false,
-          "isCanvas": false,
-          "linkedNodes": {},
-          "nodes": [],
-          "parent": "zSbBTJOpe0",
-          "props": {
-            "aria-label": "Sign in with Facebook",
-            "children": "Sign in with Facebook",
-            "color": "primary",
-            "data-descope-provider": "facebook",
-            "data-type": "social",
-            "formNoValidate": true,
-            "full-width": true,
-            "id": "MbpXvB0sxb",
-            "size": "md",
-            "st-label-spacing": "10px",
-            "startIcon": "facebook",
-            "startIconColorText": false,
-            "variant": "outline"
-          },
-          "type": {
-            "resolvedName": "FacebookButton"
           }
         },
         "O6g57IzhQ9": {
@@ -2191,6 +2185,37 @@
             "resolvedName": "Container"
           }
         },
+        "XOqno_c7Ro": {
+          "custom": {
+            "subType": "social",
+            "type": "button"
+          },
+          "displayName": "Microsoft Button",
+          "hidden": false,
+          "isCanvas": false,
+          "linkedNodes": {},
+          "nodes": [],
+          "parent": "zSbBTJOpe0",
+          "props": {
+            "aria-label": "Sign in with Microsoft",
+            "children": "Sign in with Microsoft",
+            "color": "primary",
+            "data-descope-provider": "microsoft",
+            "data-type": "social",
+            "formNoValidate": true,
+            "full-width": true,
+            "id": "XOqno_c7Ro",
+            "size": "md",
+            "st-label-spacing": "10px",
+            "startIcon": "microsoft",
+            "startIconColorText": false,
+            "tooltipText": "Tooltip text",
+            "variant": "outline"
+          },
+          "type": {
+            "resolvedName": "MicrosoftButton"
+          }
+        },
         "YsKt52415F": {
           "custom": {
             "type": "input"
@@ -2239,6 +2264,7 @@
             "link-target-blank": true,
             "mode": "primary",
             "text-align": "center",
+            "tooltipText": "Tooltip text",
             "variant": "h3"
           },
           "type": {
@@ -2262,6 +2288,7 @@
             "link-target-blank": true,
             "mode": "primary",
             "text-align": "center",
+            "tooltipText": "Tooltip text",
             "variant": "body1"
           },
           "type": {
@@ -2292,6 +2319,7 @@
             "st-label-spacing": "10px",
             "startIcon": "passkey",
             "startIconColorText": true,
+            "tooltipText": "Tooltip text",
             "variant": "outline"
           },
           "type": {
@@ -2315,6 +2343,7 @@
             "mode": "primary",
             "target": "_blank",
             "text-align": "center",
+            "tooltipText": "Tooltip text",
             "variant": "body1"
           },
           "type": {
@@ -2338,6 +2367,7 @@
             "mode": "primary",
             "target": "_blank",
             "text-align": "center",
+            "tooltipText": "Tooltip text",
             "variant": "body1"
           },
           "type": {
@@ -2372,7 +2402,7 @@
           "linkedNodes": {},
           "nodes": [
             "058XUDlhFP",
-            "MbpXvB0sxb",
+            "XOqno_c7Ro",
             "gDYTgzMsxf"
           ],
           "parent": "ROOT",
@@ -2414,9 +2444,9 @@
           "type": "button"
         },
         {
-          "icon": "facebook",
-          "id": "MbpXvB0sxb",
-          "label": "Sign in with Facebook",
+          "icon": "microsoft",
+          "id": "XOqno_c7Ro",
+          "label": "Sign in with Microsoft",
           "subType": "social",
           "type": "button"
         }
